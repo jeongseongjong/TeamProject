@@ -23,6 +23,7 @@ ul {
 .drop-sub {
 	visibility: hidden;
 	position: absolute;
+	opacity:0;
 	top: 100%;
 	left: 0;
 	width: 100%;
@@ -46,8 +47,8 @@ ul {
 
 .drop-main:hover .drop-sub {
 	visibility: visible;
-	opactiy: 1;
-	transform: translateY(-2rem);
+	opacity: 1;
+	transform: translateY(-3rem);
 	transition-delay: 0s, 0s, 0.3s;
 	z-index:10;
 }
@@ -79,7 +80,7 @@ ul {
 	margin: 0 auto;
 	margin-top: 20px;
 	border-radius: 10px;
-	align-tiems: center;
+	align-items: center;
 }
 
 .list-sub-img {
