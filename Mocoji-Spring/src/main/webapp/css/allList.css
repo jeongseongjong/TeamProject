@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+
+
+.top-menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.drop-main {
+	text-align: center;
+	position: relative;
+	width: 100px;
+	height: 30px;
+}
+
+.drop-sub {
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: #454552;
+	color: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 3px 3px 5px black;
+	transform: translateY(-10rem);
+	transition: all 0.3s ease-in-out;
+	z-index:10;
+}
+
+.drop-sub>li {
+	padding: 8px 0;
+}
+
+.drop-sub>li>a:hover {
+	color: #e85a71;
+}
+
+.drop-main:hover .drop-sub {
+	visibility: visible;
+	opactiy: 1;
+	transform: translateY(-2rem);
+	transition-delay: 0s, 0s, 0.3s;
+	z-index:10;
+}
+
+/* 리스트  */
+.list {
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
+
+.list-title-main{
+	color: #e85a71;
+	font-size: 500%;
+	margin: 0;
+	margin-top: 5%;
+}
+
+.list-title-sub {
+	line-height: 50%;
+	margin: 0;
+	font-size: 200%;	
+	color: #4ea1d3;
+}
+
+.list-sub {
+	border: 2px solid #454552;
+	width: 90%;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 10px;
+	align-tiems: center;
+}
+
+.list-sub-img {
+	background-image: url(./poster/winter.jpg);
+	background-size: 100%;
+	border-radius: 5px;
+	width: 200px;
+	height: 130px;
+	margin: 10px;
+}
+
+.list-sub-text {
+	margin: 10px;
+	width: 600px;
+	text-align: start;
+}
+
+.list-sub-title {
+	font-size: 200%;
+}
+
+.list-sub-title:hover {
+	color: #e85a71;
+}
+
+.page {
+	list-style: none;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+.page>li a {
+	float: left;
+	width: 20px;
+	color: lightslategrey;
+	padding: 4px;
+	padding-top:-10px;
+	font: bold 12px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.page>li:hover, .page>li:focus {
+	color: maroon;
+	border: 1px solid mediumturquoise;
+	background-color: mistyrose;
+}
+
+footer {
+	margin-top: auto;
+	padding: 0 139px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: start;
+}
